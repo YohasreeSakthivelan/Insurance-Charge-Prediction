@@ -1,0 +1,10 @@
+Insurance Price Prediction using Machine Learning
+
+
+Algorithm / Model Used: Random Forest Regressor
+
+Training Set Mean Absolute Error: 0.609  and Test Set Mean Absolute Error: 1.443
+
+Algorithm / Model Used: Stacking Regressor 
+
+Training Set Mean Absolute Error: 0.663  and Test Set Mean Absolute Error: 1.442

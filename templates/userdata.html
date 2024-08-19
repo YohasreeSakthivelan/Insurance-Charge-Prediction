@@ -1,0 +1,275 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Insurance Amount Prediction</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="../static/img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="../static/css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="../static/css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="../static/css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="../static/css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="../static/css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="../static/css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="../static/css/magnific-popup.css">
+        <link rel="stylesheet" href="../static/css/result.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="../static/css/normalize.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/responsive.css">
+        <style>
+           
+        .btn-success {
+            width: 40%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 30%;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+        }
+        </style>
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		<!-- Header Area -->
+    <header class="header" >
+			<!-- Topbar -->
+	
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							
+							<div class="col-lg-3 col-md-3 col-12">
+								<div class="logo">
+								<img src="../static/img/favicon.png" alt="#" style="height:60px; margin-left: 20px;">
+								
+								  
+								</div>
+									
+								<h3 style="padding-top: 20px;color: blue;font-weight: bold;padding-left:10px;">
+									Insurance
+								</h3>
+												
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="{{url_for('userdata')}}">Result </a>
+												
+											
+											<li><a href="{{url_for('index')}}"> Home</a></li>
+                      <li><a href="{{url_for('upload')}}"> Upload</a></li>
+                      <li><a href="{{url_for('preview')}}"> Preview </a></li>
+                      <li><a href="{{url_for('predict')}}"> Predict </a></li>
+                      <li><a href="{{url_for('chart')}}"> Chart</a></li>
+
+
+
+
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		         <br>
+             <br>
+		         
+             <br>
+             <br>
+            <img src="../static/img/20944526.jpg" alt="" srcset=""style="width:80%; height:50%;padding-left: 200px; ">
+            <div class="information">
+                <div class="info">
+                
+            
+                  <div style="margin-left:300px">   <table>
+                
+                
+                      <td> The Provided Information are :</td>
+                    <br>
+                    <br>
+                    <tr>
+                      <th>Input</th>
+                      <th>Output</th>
+                    </tr>
+                    <br>
+                    <tr>
+                      <td>AGE : Age Of The User </td>
+                      <td>{{age}}</td>
+                    </tr>
+                    <br>
+                    <tr>
+                      <td>SEX : Sex Of The User</td>
+                      <td>{{sex}}</td>
+                    </tr>
+                    <tr>
+                      <td>BMI : User BMI level</td>
+                      <td>{{BMI}}</td>
+                    </tr>
+                    <tr>
+                      <td>CHILDREN : No Of Children User Have</td>
+                      <td>{{CHILDREN}}</td>
+                    </tr>
+                    <tr>
+                      <td>SMOKER : User is Smoker or Not </td>
+                      <td>{{smoker}}</td>
+                    </tr>
+                    <tr>
+                      <td> REGION : Region of the User </td>
+                      <td>{{reg}}</td>
+                    </tr>
+                    
+                
+                      <tr>
+                        <td>MODEL : Selected Model</td>
+                        <td>{{MODEL}}</td>
+                      </tr>
+                    <tr>
+                      <td>INSURANCE CHARGE : Predicted Insurance Charge </td>
+                      <td>{{result}}</td>
+                    </tr>
+                  </table></div>
+            
+                </div>
+              </div>
+              <h3 style="padding-left:300px ;"> The Predicted Insurance Amount To be Paid is : {{result}} Rupees </h3>
+              <br>
+              <br>
+              <br>
+               
+              <!-- Vendor JS Files -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    
+              <button  class="btn-success" id="download-pdf" >Download PDF</button>
+    
+              <script>
+                const btn = document.getElementById('download-pdf');
+                const table = document.querySelector('.information table');
+              
+                btn.addEventListener('click', function() {
+                  var opt = {
+                    margin: 1,
+                    filename: 'medical_results.pdf',
+                    image: { type: 'jpeg', quality: 1 },
+                    html2canvas: { scale: 2 } // Increase scale for better quality on high-resolution displays
+                  };
+                  html2pdf().set(opt).from(table).save();
+                });
+              </script>
+              
+              
+       
+        
+
+        </div>
+    </div>
+            
+            <!-- jquery Min JS -->
+        <!-- jquery Min JS -->
+        <script src="../static/js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="../static/js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="../static/js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="../static/js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="../static/js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="../static/js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="../static/js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="../static/js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="../static/js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="../static/js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="../static/js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="../static/js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="../static/js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="../static/js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="../static/js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="../static/js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="../static/js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="../static/http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="../static/js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="../static/js/main.js"></script>
+    </body>
+</html>
